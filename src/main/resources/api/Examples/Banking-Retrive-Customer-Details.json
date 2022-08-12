@@ -1,0 +1,32 @@
+[
+{
+"CustomerName" : "Megha",
+"AccountNumber" : "31876676980",
+"AccountType" : "Savings",
+"MobileNumber" : "9701871149"
+},
+{
+"CustomerName" : "Reddy",
+"AccountNumber" : "31876676981",
+"AccountType" : "Savings",
+"MobileNumber" : "9701871148"
+},
+{
+"CustomerName" : "Megha",
+"AccountNumber" : "31876676982",
+"AccountType" : "Savings",
+"MobileNumber" : "9701871147"
+},
+{
+"CustomerName" : "Megha",
+"AccountNumber" : "31876676983",
+"AccountType" : "Savings",
+"MobileNumber" : "970187114"
+},
+{
+"CustomerName" : "Megha",
+"AccountNumber" : "31876676984",
+"AccountType" : "Savings",
+"MobileNumber" : "9701871145"
+}
+]

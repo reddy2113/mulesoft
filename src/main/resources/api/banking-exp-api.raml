@@ -1,0 +1,23 @@
+#%RAML 1.0
+title: Banking-exp-api
+version: v1
+
+/customer:
+  get:
+    description: This is toretrive the customer details.
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include Examples/Banking-Retrive-Customer-Details.json
+  post:
+    description: create new customer
+    body:
+      application/json:
+        example: !include Examples/Banking-Create-Account-Request.json
+    responses:
+      201:
+        body:
+          application/json:
+            example: !include Examples/Banking-Creates-Customer-Responses.json
+              
