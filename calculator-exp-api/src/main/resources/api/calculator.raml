@@ -1,0 +1,145 @@
+#%RAML 1.0
+title: calculator
+version: v1
+description: "this api is used to perform some math operations"
+
+/additions:
+  get:
+    queryParameters:
+      number1 :
+        required: true
+        type: integer
+        example: 10
+      number2 :
+        required: true
+        type: integer
+        example: 30
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include Example/addition-responses.json
+      400:
+        description: |
+          Bad result
+      401:
+        description: |
+            Internal server error
+      404:
+        body:
+          application/json:
+            example:
+              {
+                "Messae": "Not Found"
+              }
+      500:
+        body:
+           application/json:
+             example:
+               {
+                 "message" : "Internar Server error"
+               }
+      504:
+        body:
+          application/json:
+            example:
+              {
+                "Message" : "Gateway Time Out"
+              }
+/Sub :
+  post:
+    queryParameters:
+      num1 :
+        type: integer
+        required: true
+        example: 20
+      num2 :
+        type: integer
+        required: true
+        example: 20
+    responses:
+          200:
+            body:
+              application/json:
+                example: !include Example/sub-responses.json
+/multi :
+  patch:
+    queryParameters:
+      number1 :
+        required: true
+        type: integer
+        example: 20
+      number2 :
+        required: true
+        type: integer
+        example: 5
+    responses:
+          200:
+            body:
+              application/json:
+                example: !include Example/multi-responses.json
+          500:
+            body:
+              application/json:
+                example:
+                  {
+                    "message" : "internet server error"
+                  }
+/dive :
+  put:
+    queryParameters:
+      number1 :
+        required: true
+        type: integer
+        example: 20
+      number2 :
+        required: true
+        type: integer
+        example : 5
+    responses:
+          200:
+            body:
+              application/json:
+                example: !include Example/div-responses.json
+          500:
+            body:
+              application/json:
+                example:
+                  {
+                    "message" : "ïnternet server error"
+                  }
+                                                  
+                  
+              
+                          
+            
+          
+                               
+                                                  
+                
+                
+          
+
+                                              
+
+
+                  
+                  
+                
+          
+
+          
+
+              
+
+
+                                                                          
+              
+        
+                
+
+
+              
+        
+          
+          
